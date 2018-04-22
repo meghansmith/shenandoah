@@ -1,0 +1,40 @@
+.home {
+	.introImage img {
+		margin-top:-18px;
+	}
+	.introImage p {
+		margin-top:6px;
+		color: $burgandy;
+	}
+
+	.offerings {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+	.offeringCard {
+		max-width: 400px;
+			@include bp($med){
+					max-width: 220px;
+				}
+			}
+	.offerings a {
+		text-decoration-color: $burgandy;
+	}
+	div.offeringCard{
+		padding: 24px;
+		background-color: $green;
+		margin:auto;
+		margin-bottom: 24px;
+	}
+	.offeringCard img{
+		border: 5px solid $burgandy;
+	}
+	.offeringCard h3 {
+		padding-top: 0;
+		color: $burgandy;
+	}
+
+
+}

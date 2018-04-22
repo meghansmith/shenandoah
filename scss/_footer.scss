@@ -1,0 +1,64 @@
+footer.mainFooter { 
+	width: 100%;
+	background-color:$brick;
+	color: $tan;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-left: 4%;
+    padding-right: 4%;
+	
+
+	ul {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+
+
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		color: $tan;
+		text-decoration: none;
+		padding: 6px 14px;
+		font-family: $fontB;
+		display: inline-block;
+	}
+
+
+
+}
+.subFooter {
+	background-color: $navy;
+	color: $tan;
+
+	padding-left:4%;
+	padding-right:4%;
+			
+
+
+	.copyright {
+		font-size: 13px;
+		margin-bottom: 0;
+		margin-top:0;
+		padding-top:12px;
+
+
+		@include bp($small) {
+			text-align: left;
+			clear: left;
+		}
+	}
+	.attribute {
+		padding-bottom: 12px;
+		font-family: $fontH;
+		font-size: 12px;
+		font-weight: light;
+	}
+		a {
+			color: $tan;
+			font-family: $fontH;
+
+	}
+}

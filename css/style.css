@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Zilla+Slab:300,400,400i,700");
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #1f2537;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1e6; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #bbdddb;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ff0000;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+//    ========================================================================== */
+body {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto;
+  padding: 0; }
+
+h1 {
+  font-size: 54px;
+  line-height: 72px;
+  margin-bottom: 24px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+  padding-top: 48px;
+  margin-bottom: 24px; }
+
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 24px;
+  margin-bottom: 24px; }
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 24px;
+  margin-bottom: 24px; }
+
+p, ul, ol, pre, table, blockquote {
+  margin-bottom: 24px; }
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+b, strong, em, small, code {
+  line-height: 1; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
+
+h1, h2, h3, h4, a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; }
+
+p, ul, ol {
+  font-family: "Zilla Slab", sans-serif; }
+
+.logoReplace a {
+  display: inline-block;
+  margin: 0 auto;
+  width: 201px;
+  height: 159px;
+  background-size: cover;
+  background-image: url("../images/logo200.png");
+  text-indent: -9999px; }
+  .logoReplace a:after {
+    display: none; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 4%;
+  padding-right: 4%; }
+  @media (min-width: 650px) {
+    .wrapper {
+      padding-top: 12px; } }
+  @media (min-width: 850px) {
+    .wrapper {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media (min-width: 1000px) {
+    .wrapper {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.bold {
+  font-weight: 700; }
+
+p > a {
+  font-family: "Zilla Slab", sans-serif; }
+
+section {
+  padding-left: 4%;
+  padding-right: 4%; }
+  @media (min-width: 31.25em) {
+    section {
+      padding-left: 4%;
+      padding-right: 4%; } }
+  @media (min-width: 650px) {
+    section {
+      padding-top: 12px; } }
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid;
+  margin-top: 0px;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px; }
+  @media (min-width: 1025px) {
+    .button:hover {
+      background-color: blue; } }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /*a[href]:after {
+      content: " (" attr(href) ")";
+  }  this prints the href after each link on the page. */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999 blue;
+    page-break-inside: avoid; }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+header .container {
+  display: flex;
+  justify-content: space-between; }
+header h1 {
+  margin-bottom: -30px;
+  margin-top: 0; }
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 32.8125em) {
+    header ul {
+      justify-content: flex-end; } }
+header li {
+  display: inline; }
+header a {
+  display: inline-block;
+  color: #491506;
+  font-size: 1.25em;
+  margin-top: 12px;
+  padding: 13px 8px 13px;
+  transition: all .3s ease;
+  text-decoration: none;
+  position: relative; }
+  @media (min-width: 1025px) {
+    header a:hover {
+      color: #5c1f0d; } }
+header p {
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #491506;
+  order: 1; }
+
+.home .introImage img {
+  margin-top: -18px; }
+.home .introImage p {
+  margin-top: 6px;
+  color: #491506; }
+.home .offerings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+.home .offeringCard {
+  max-width: 400px; }
+  @media (min-width: 1000px) {
+    .home .offeringCard {
+      max-width: 220px; } }
+.home .offerings a {
+  text-decoration-color: #491506; }
+.home div.offeringCard {
+  padding: 24px;
+  background-color: #bfc7bc;
+  margin: auto;
+  margin-bottom: 24px; }
+.home .offeringCard img {
+  border: 5px solid #491506; }
+.home .offeringCard h3 {
+  padding-top: 0;
+  color: #491506; }
+
+footer.mainFooter {
+  width: 100%;
+  background-color: #5c1f0d;
+  color: #f4f1e6;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-left: 4%;
+  padding-right: 4%; }
+  footer.mainFooter ul {
+    margin: 0;
+    list-style: none;
+    padding: 0; }
+  footer.mainFooter li {
+    display: inline-block; }
+  footer.mainFooter a {
+    color: #f4f1e6;
+    text-decoration: none;
+    padding: 6px 14px;
+    font-family: "Zilla Slab", sans-serif;
+    display: inline-block; }
+
+.subFooter {
+  background-color: #1f2537;
+  color: #f4f1e6;
+  padding-left: 4%;
+  padding-right: 4%; }
+  .subFooter .copyright {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 12px; }
+    @media (min-width: 650px) {
+      .subFooter .copyright {
+        text-align: left;
+        clear: left; } }
+  .subFooter .attribute {
+    padding-bottom: 12px;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    font-weight: light; }
+  .subFooter a {
+    color: #f4f1e6;
+    font-family: "Oswald", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
