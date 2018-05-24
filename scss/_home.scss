@@ -17,6 +17,7 @@
 		max-width: 400px;
 			@include bp($med){
 					max-width: 220px;
+					height: 365px;
 				}
 			}
 	.offerings a {
@@ -31,7 +32,7 @@
 	.offeringCard img{
 		border: 5px solid $burgandy;
 	}
-	.offeringCard h3 {
+	.offeringCard h3 { 
 		padding-top: 0;
 		color: $burgandy;
 	}

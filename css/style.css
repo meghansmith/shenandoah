@@ -389,7 +389,8 @@ header p {
   max-width: 400px; }
   @media (min-width: 1000px) {
     .home .offeringCard {
-      max-width: 220px; } }
+      max-width: 220px;
+      height: 365px; } }
 .home .offerings a {
   text-decoration-color: #491506; }
 .home div.offeringCard {
