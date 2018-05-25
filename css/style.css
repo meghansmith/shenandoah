@@ -414,6 +414,36 @@ header p {
     display: inline-block;
     width: 49%; } }
 
+.detail h2 {
+  margin-top: -20px;
+  padding-top: 0px;
+  border-bottom: 4px solid #1f2537; }
+@media (min-width: 1000px) {
+  .detail header nav {
+    margin-bottom: -45px; } }
+.detail .wrapper {
+  margin-bottom: 30px; }
+.detail .explanation {
+  font-style: italic;
+  margin-top: 0; }
+.detail .detailSmall {
+  margin-top: 30px; }
+  @media (min-width: 650px) {
+    .detail .detailSmall {
+      display: inline-block;
+      width: 48%; } }
+  @media (min-width: 1000px) {
+    .detail .detailSmall {
+      margin-top: 60px; } }
+@media (min-width: 650px) {
+  .detail .detailLast {
+    margin-left: 3%; } }
+@media (min-width: 650px) {
+  .detail .detailLarge {
+    width: 65%;
+    float: left;
+    padding-right: 20px; } }
+
 footer.mainFooter {
   width: 100%;
   background-color: #5c1f0d;
@@ -449,11 +479,20 @@ footer.mainFooter {
       .subFooter .copyright {
         text-align: left;
         clear: left; } }
+    @media (min-width: 850px) {
+      .subFooter .copyright {
+        display: inline-block;
+        width: 50%; } }
   .subFooter .attribute {
     padding-bottom: 12px;
     font-family: "Oswald", sans-serif;
     font-size: 12px;
     font-weight: light; }
+    @media (min-width: 850px) {
+      .subFooter .attribute {
+        text-align: right;
+        display: inline-block;
+        width: 49%; } }
   .subFooter a {
     color: #f4f1e6;
     font-family: "Oswald", sans-serif; }

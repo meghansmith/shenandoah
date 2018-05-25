@@ -1,0 +1,65 @@
+.detail {
+	h2 {
+		margin-top: -20px;
+		padding-top: 0px;
+		border-bottom: 4px solid $navy;
+		@include bp($med){
+			// margin-bottom: 0;
+		}
+
+	}
+
+
+	header nav {
+		@include bp($med){
+			margin-bottom: -45px;
+		}
+	}
+
+	.wrapper {
+		margin-bottom: 30px;
+	}
+
+	.explanation {
+		font-style: italic;
+		margin-top: 0;
+	}
+
+	.detailSmall {
+		margin-top: 30px;
+		@include bp($small){
+			display: inline-block;
+			width: 48%;
+
+		}
+
+		@include bp($med){
+			margin-top: 60px;
+		}
+	}
+	.detailLast{
+		@include bp($small){
+			margin-left: 3%;
+		}
+	
+	}
+
+	.detailLarge {
+
+		@include bp($small){
+			width: 65%;
+			float: left;
+			padding-right: 20px;
+		}
+
+	}
+
+	.description {
+		// @include bp($small){
+		// 	width: 33%;
+		// 	display: inline-block;
+		// }
+
+	}
+
+}

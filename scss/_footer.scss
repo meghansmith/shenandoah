@@ -49,12 +49,22 @@ footer.mainFooter {
 			text-align: left;
 			clear: left;
 		}
+		@include bp($workMed){
+			display: inline-block;
+			width: 50%;
+		}
 	}
 	.attribute {
 		padding-bottom: 12px;
 		font-family: $fontH;
 		font-size: 12px;
 		font-weight: light;
+
+		@include bp($workMed){
+			text-align: right;
+			display: inline-block;
+			width: 49%;
+		}
 	}
 		a {
 			color: $tan;
