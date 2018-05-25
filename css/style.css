@@ -181,17 +181,6 @@ img {
 p > a {
   font-family: "Zilla Slab", sans-serif; }
 
-section {
-  padding-left: 4%;
-  padding-right: 4%; }
-  @media (min-width: 31.25em) {
-    section {
-      padding-left: 4%;
-      padding-right: 4%; } }
-  @media (min-width: 650px) {
-    section {
-      padding-top: 12px; } }
-
 .button {
   text-align: center;
   text-decoration: none;
@@ -204,6 +193,13 @@ section {
   @media (min-width: 1025px) {
     .button:hover {
       background-color: blue; } }
+
+.form .cognito a {
+  visibility: hidden; }
+
+.form form {
+  border: 4px solid #1f2537;
+  padding: 20px; }
 
 /* ==========================================================================
    Helper classes
@@ -390,19 +386,33 @@ header p {
   @media (min-width: 1000px) {
     .home .offeringCard {
       max-width: 220px;
-      height: 365px; } }
+      height: 385px; } }
 .home .offerings a {
-  text-decoration-color: #491506; }
+  text-decoration: none; }
 .home div.offeringCard {
   padding: 24px;
   background-color: #bfc7bc;
   margin: auto;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  border: 4px solid #bfc7bc;
+  transition: all .5s ease; }
+  @media (min-width: 1025px) {
+    .home div.offeringCard:hover {
+      border: 4px solid #1f2537; } }
 .home .offeringCard img {
   border: 5px solid #491506; }
 .home .offeringCard h3 {
   padding-top: 0;
   color: #491506; }
+@media (min-width: 1000px) {
+  .home div.quality {
+    display: inline-block;
+    width: 49%;
+    padding-left: 2%;
+    vertical-align: top; }
+  .home div.form {
+    display: inline-block;
+    width: 49%; } }
 
 footer.mainFooter {
   width: 100%;

@@ -15,19 +15,31 @@
 	}
 	.offeringCard {
 		max-width: 400px;
+
 			@include bp($med){
 					max-width: 220px;
-					height: 365px;
+					height: 385px;
 				}
 			}
 	.offerings a {
-		text-decoration-color: $burgandy;
+		//text-decoration-color: $burgandy;
+		text-decoration: none;
+
 	}
 	div.offeringCard{
 		padding: 24px;
 		background-color: $green;
 		margin:auto;
 		margin-bottom: 24px;
+		border: 4px solid $green;
+		transition: all .5s ease;
+
+		@include bp($hover){
+			&:hover{
+			border: 4px solid $navy;
+
+			}
+		}
 	}
 	.offeringCard img{
 		border: 5px solid $burgandy;
@@ -37,5 +49,18 @@
 		color: $burgandy;
 	}
 
+
+	@include bp($med){
+		div.quality {
+			display: inline-block;
+			width: 49%;
+			padding-left: 2%;
+			vertical-align: top;
+		}
+		div.form {
+			display: inline-block;
+			width: 49%;
+		}
+	}
 
 }

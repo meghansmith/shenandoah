@@ -219,16 +219,16 @@ p>a{
 
 
 section {
-    padding-left: 4%;
-    padding-right: 4%;
+    // padding-left: 4%;
+    // padding-right: 4%;
 
-    @include bp(500em / 16){
-      padding-left: 4%;
-      padding-right: 4%;
-    }
-    @include bp($small){
-      padding-top: 12px;
-    }
+    // @include bp(500em / 16){
+    //   padding-left: 4%;
+    //   padding-right: 4%;
+    // }
+    // @include bp($small){
+    //   padding-top: 12px;
+    // }
 
 }
 
@@ -252,7 +252,13 @@ section {
 
 
 
-
+.form .cognito a {
+  visibility: hidden;
+}
+.form form {
+  border: 4px solid $navy;
+  padding: 20px;
+}
 
 
 
