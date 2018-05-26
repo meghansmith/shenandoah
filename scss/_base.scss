@@ -261,6 +261,21 @@ section {
 }
 
 
+.zoom {
+  img{
+    transition: all .5s ease;
+  }
+  
+  @include bp($hover){
+      &:hover{
+        img{
+        transform: scale(1.05);
+
+        }
+      }
+    }
+}
+
 
 
 /* ==========================================================================

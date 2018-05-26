@@ -201,6 +201,12 @@ p > a {
   border: 4px solid #1f2537;
   padding: 20px; }
 
+.zoom img {
+  transition: all .5s ease; }
+@media (min-width: 1025px) {
+  .zoom:hover img {
+    transform: scale(1.05); } }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -363,7 +369,8 @@ header a {
   position: relative; }
   @media (min-width: 1025px) {
     header a:hover {
-      color: #5c1f0d; } }
+      color: #92361a;
+      text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); } }
 header p {
   font-family: "Oswald", sans-serif;
   font-size: 12px;
@@ -398,7 +405,10 @@ header p {
   transition: all .5s ease; }
   @media (min-width: 1025px) {
     .home div.offeringCard:hover {
-      border: 4px solid #1f2537; } }
+      border: 4px solid #1f2537; }
+      .home div.offeringCard:hover h3 {
+        text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+        color: #92361a; } }
 .home .offeringCard img {
   border: 5px solid #491506; }
 .home .offeringCard h3 {
@@ -415,9 +425,12 @@ header p {
     width: 49%; } }
 
 .detail h2 {
-  margin-top: -20px;
+  margin-top: -10px;
   padding-top: 0px;
   border-bottom: 4px solid #1f2537; }
+  @media (min-width: 1000px) {
+    .detail h2 {
+      margin-bottom: 0; } }
 @media (min-width: 1000px) {
   .detail header nav {
     margin-bottom: -45px; } }
@@ -427,14 +440,15 @@ header p {
   font-style: italic;
   margin-top: 0; }
 .detail .detailSmall {
-  margin-top: 30px; }
+  margin-top: 30px;
+  vertical-align: top; }
   @media (min-width: 650px) {
     .detail .detailSmall {
       display: inline-block;
       width: 48%; } }
   @media (min-width: 1000px) {
     .detail .detailSmall {
-      margin-top: 60px; } }
+      margin-top: 10px; } }
 @media (min-width: 650px) {
   .detail .detailLast {
     margin-left: 3%; } }
@@ -443,6 +457,25 @@ header p {
     width: 65%;
     float: left;
     padding-right: 20px; } }
+.detail .previousNext {
+  margin-bottom: 24px;
+  display: block; }
+.detail a.nextProject {
+  float: right;
+  color: #1f2537;
+  font-weight: 300;
+  padding: 10px 5px; }
+  @media (min-width: 1025px) {
+    .detail a.nextProject:hover {
+      color: #3155c1; } }
+.detail a.lastProject {
+  float: left;
+  color: #1f2537;
+  font-weight: 300;
+  padding: 10px 5px; }
+  @media (min-width: 1025px) {
+    .detail a.lastProject:hover {
+      color: #3155c1; } }
 
 footer.mainFooter {
   width: 100%;
@@ -464,6 +497,10 @@ footer.mainFooter {
     padding: 6px 14px;
     font-family: "Zilla Slab", sans-serif;
     display: inline-block; }
+    @media (min-width: 1025px) {
+      footer.mainFooter a:hover {
+        color: white;
+        text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); } }
 
 .subFooter {
   background-color: #1f2537;

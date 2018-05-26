@@ -1,14 +1,13 @@
 .detail {
 	h2 {
-		margin-top: -20px;
+		margin-top: -10px;
 		padding-top: 0px;
 		border-bottom: 4px solid $navy;
 		@include bp($med){
-			// margin-bottom: 0;
+			margin-bottom: 0;
 		}
 
 	}
-
 
 	header nav {
 		@include bp($med){
@@ -27,6 +26,7 @@
 
 	.detailSmall {
 		margin-top: 30px;
+		vertical-align: top;
 		@include bp($small){
 			display: inline-block;
 			width: 48%;
@@ -34,12 +34,13 @@
 		}
 
 		@include bp($med){
-			margin-top: 60px;
+			margin-top: 10px;
 		}
 	}
 	.detailLast{
 		@include bp($small){
 			margin-left: 3%;
+
 		}
 	
 	}
@@ -60,6 +61,39 @@
 		// 	display: inline-block;
 		// }
 
+	}
+
+	.previousNext {
+		margin-bottom: 24px;
+		display: block;
+
+	}
+	a.nextProject{
+		float: right;
+		
+		color: $navy;
+		font-weight: 300;
+		padding: 10px 5px;
+
+		@include bp($hover){
+			&:hover{
+				color: $navyH;
+			}
+		}
+		
+	}
+	a.lastProject{
+		float: left;
+		color: $navy;
+		font-weight: 300;
+		padding: 10px 5px;
+
+		@include bp($hover){
+			&:hover{
+				color: $navyH;
+			}
+		}
+		
 	}
 
 }

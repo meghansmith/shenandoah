@@ -37,6 +37,11 @@
 		@include bp($hover){
 			&:hover{
 			border: 4px solid $navy;
+			h3{
+				
+				text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+				color: $burgandyH;
+			}
 
 			}
 		}
@@ -47,6 +52,7 @@
 	.offeringCard h3 { 
 		padding-top: 0;
 		color: $burgandy;
+
 	}
 
 
