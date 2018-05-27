@@ -36,12 +36,16 @@ header{
 
 		display: inline-block;
 		color: $burgandy;
-		font-size: 1.25em;
+		font-size: 1em;
 		margin-top:12px;
 		padding: 13px 8px 13px;
 		transition: all .3s ease;
 		text-decoration: none;
 		position: relative;
+
+		@include bp(430px){
+			font-size: 1.25em;
+		}
 
 
 

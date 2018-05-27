@@ -371,12 +371,15 @@ header li {
 header nav a {
   display: inline-block;
   color: #491506;
-  font-size: 1.25em;
+  font-size: 1em;
   margin-top: 12px;
   padding: 13px 8px 13px;
   transition: all .3s ease;
   text-decoration: none;
   position: relative; }
+  @media (min-width: 430px) {
+    header nav a {
+      font-size: 1.25em; } }
   @media (min-width: 1025px) {
     header nav a:hover {
       color: #92361a;
