@@ -276,6 +276,18 @@ section {
     }
 }
 
+  @include bp($med){
+    div.quality {
+      display: inline-block;
+      width: 49%;
+      padding-left: 2%;
+      vertical-align: top;
+    }
+    div.form {
+      display: inline-block;
+      width: 49%;
+    }
+  }
 
 
 /* ==========================================================================
