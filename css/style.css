@@ -433,9 +433,6 @@ header p {
   margin-top: -10px;
   padding-top: 0px;
   border-bottom: 4px solid #1f2537; }
-  @media (min-width: 1000px) {
-    .detail h2 {
-      margin-bottom: 0; } }
 @media (min-width: 1000px) {
   .detail header nav {
     margin-bottom: -45px; } }
@@ -519,6 +516,17 @@ header p {
   color: #491506;
   width: 55%;
   display: inline-block; }
+.detail p.quotation {
+  clear: both;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 24px; }
+.detail .quotation .attribution {
+  font-weight: normal; }
 
 footer.mainFooter {
   width: 100%;

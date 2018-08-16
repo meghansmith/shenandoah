@@ -3,9 +3,6 @@
 		margin-top: -10px;
 		padding-top: 0px;
 		border-bottom: 4px solid $navy;
-		@include bp($med){
-			margin-bottom: 0;
-		}
 
 	}
 
@@ -156,6 +153,19 @@
 		color: $burgandy;
 		width: 55%;
 		display: inline-block;
+	}
+	p.quotation{
+		clear: both;
+		text-align: center;
+		font-weight: bold;
+		font-style: italic;
+		width: 80%;
+		max-width: 500px;
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+	.quotation .attribution{
+		font-weight:normal;
 	}
 
 }
